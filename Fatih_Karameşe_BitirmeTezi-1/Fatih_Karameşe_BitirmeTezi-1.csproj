@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8AEFE5EB-AB19-471D-B6B7-DF33BB1F1B11}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fatih_Karameşe_BitirmeTezi_1</RootNamespace>
+    <AssemblyName>Fatih_Karameşe_BitirmeTezi-1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=20.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.20.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v20.1" />
+    <Reference Include="DevExpress.Charts.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1" />
+    <Reference Include="DevExpress.Data.v20.1" />
+    <Reference Include="DevExpress.DataAccess.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v20.1.UI, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v20.1" />
+    <Reference Include="DevExpress.Sparkline.v20.1.Core" />
+    <Reference Include="DevExpress.Utils.v20.1.UI, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v20.1.Extensions, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v20.1.Wizard, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v20.1" />
+    <Reference Include="DevExpress.Printing.v20.1.Core" />
+    <Reference Include="DevExpress.XtraGauges.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v20.1.Extensions, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1484.0\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1484.0\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSettings.Designer.cs">
+      <DependentUpon>fSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Barkod.cs">
+      <DependentUpon>entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BitirmeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BitirmeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="entity.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>entity.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="entity.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="entity.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>entity.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="fInOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fInOut.Designer.cs">
+      <DependentUpon>fInOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLogin.Designer.cs">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fShowDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fShowDetails.Designer.cs">
+      <DependentUpon>fShowDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fShowReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fShowReport.Designer.cs">
+      <DependentUpon>fShowReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fUpdateCost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fUpdateCost.Designer.cs">
+      <DependentUpon>fUpdateCost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IslemOzet.cs">
+      <DependentUpon>entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="fMainStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMainStore.Designer.cs">
+      <DependentUpon>fMainStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanıvılar.cs">
+      <DependentUpon>entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MainGamificiation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainGamificiation.Designer.cs">
+      <DependentUpon>MainGamificiation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nesnelerim.cs" />
+    <Compile Include="fReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fReport.Designer.cs">
+      <DependentUpon>fReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Raporlar.cs" />
+    <Compile Include="Sabit.cs">
+      <DependentUpon>entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Satis.cs">
+      <DependentUpon>entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="fSellPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSellPage.Designer.cs">
+      <DependentUpon>fSellPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HizliUrun.cs">
+      <DependentUpon>entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="fStok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fStok.Designer.cs">
+      <DependentUpon>fStok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="StokHareket.cs">
+      <DependentUpon>entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Terazi.cs">
+      <DependentUpon>entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Urun.cs">
+      <DependentUpon>entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="fAddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddProduct.Designer.cs">
+      <DependentUpon>fAddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fCardCash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCardCash.Designer.cs">
+      <DependentUpon>fCardCash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fCreateGroupOfProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCreateGroupOfProduct.Designer.cs">
+      <DependentUpon>fCreateGroupOfProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrunGrup.cs">
+      <DependentUpon>entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="fCreateProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCreateProduct.Designer.cs">
+      <DependentUpon>fCreateProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fBackup.Designer.cs">
+      <DependentUpon>fBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yazdır.cs" />
+    <Compile Include="İslem.cs">
+      <DependentUpon>entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="İslemler.cs" />
+    <EmbeddedResource Include="fSettings.resx">
+      <DependentUpon>fSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fInOut.resx">
+      <DependentUpon>fInOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLogin.resx">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMainStore.resx">
+      <DependentUpon>fMainStore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fShowDetails.resx">
+      <DependentUpon>fShowDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fShowReport.resx">
+      <DependentUpon>fShowReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fUpdateCost.resx">
+      <DependentUpon>fUpdateCost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainGamificiation.resx">
+      <DependentUpon>MainGamificiation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fReport.resx">
+      <DependentUpon>fReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fSellPage.resx">
+      <DependentUpon>fSellPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="fStok.resx">
+      <DependentUpon>fStok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddProduct.resx">
+      <DependentUpon>fAddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fCardCash.resx">
+      <DependentUpon>fCardCash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fCreateGroupOfProduct.resx">
+      <DependentUpon>fCreateGroupOfProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fCreateProduct.resx">
+      <DependentUpon>fCreateProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fBackup.resx">
+      <DependentUpon>fBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Resources\add_32x32.png" />
+    <None Include="Resources\cancel_32x32.png" />
+    <None Include="Resources\exit4854.png" />
+    <None Include="Resources\istockphoto-496603666-170667a.jpg" />
+    <None Include="Resources\stok4854.png" />
+    <None Include="Resources\Ara32.png" />
+    <None Include="Resources\ara2424.png" />
+    <None Include="Resources\ara3232.png" />
+    <None Include="Resources\backup4854.png" />
+    <None Include="Resources\barcode4832.png" />
+    <None Include="Resources\cancel24.png" />
+    <None Include="Resources\clear4848.png" />
+    <None Include="Resources\defaultimage.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\duzenle32.png" />
+    <None Include="Resources\Ekle20.png" />
+    <None Include="Resources\Ekle24.png" />
+    <None Include="Resources\Ekle32.png" />
+    <None Include="Resources\enter-arrow.png" />
+    <None Include="Resources\Excel32.png" />
+    <None Include="Resources\excel4854.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\exit32.png" />
+    <None Include="Resources\fiyatguncelletl4854.png" />
+    <None Include="Resources\goz24.png" />
+    <None Include="Resources\kartnakit.png" />
+    <None Include="Resources\kartnakit1.png" />
+    <None Include="Resources\kredikarti.png" />
+    <None Include="Resources\kredikarti1.png" />
+    <None Include="Resources\kullanicidegistir32.png" />
+    <None Include="Resources\login.png" />
+    <None Include="Resources\lookup&amp;reference_32x32.png" />
+    <None Include="Resources\PngItem_806285.png" />
+    <None Include="Resources\printer.png" />
+    <None Include="Resources\printer256.png" />
+    <None Include="Resources\remove.png" />
+    <None Include="Resources\restore4854.png" />
+    <None Include="Resources\satisyap4854.png" />
+    <None Include="Resources\save_32x32.png" />
+    <None Include="Resources\save24.png" />
+    <None Include="Resources\scan-barcode-with-scanner-tool.png" />
+    <None Include="Resources\settings4854.png" />
+    <None Include="Resources\shuffle.png" />
+    <None Include="Resources\tl_32_b.jpg" />
+    <None Include="Resources\tl_48.png" />
+    <None Include="Resources\tl_481.png" />
+    <None Include="Resources\tlBeyaz32.png" />
+    <None Include="Resources\urungiris4854.png" />
+    <None Include="Resources\png-transparent-button-search-button-internet-search-engine-search-button.png" />
+    <None Include="Resources\25-254030_transparent-magnifier-icon-png-search-button-png-png.png" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\save-file-option.png" />
+    <Content Include="rpGenelRapor.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpStokUrun.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpStokİzleme.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <EntityDeploy Include="entity.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>entity.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="BitirmeDataSet.xsc">
+      <DependentUpon>BitirmeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BitirmeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BitirmeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BitirmeDataSet.xss">
+      <DependentUpon>BitirmeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="entity.edmx.diagram">
+      <DependentUpon>entity.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Ayarlar.datasource" />
+    <None Include="Properties\DataSources\Barkod.datasource" />
+    <None Include="Properties\DataSources\BitirmeDataSet.datasource" />
+    <None Include="Properties\DataSources\BitirmeDataSet.UrunDataTable.datasource" />
+    <None Include="Properties\DataSources\BitirmeDataSet.UrunRow.datasource" />
+    <None Include="Properties\DataSources\BitirmeDataSet.UrunRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\BitirmeDataSet.UrunRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\BitirmeEntities.datasource" />
+    <None Include="Properties\DataSources\fAddProduct.datasource" />
+    <None Include="Properties\DataSources\Fatih_Karameşe_BitirmeTezi_1.BitirmeDataSetTableAdapters.TableAdapterManager+UpdateOrderOption.datasource" />
+    <None Include="Properties\DataSources\Fatih_Karameşe_BitirmeTezi_1.BitirmeDataSetTableAdapters.TableAdapterManager.datasource" />
+    <None Include="Properties\DataSources\Fatih_Karameşe_BitirmeTezi_1.BitirmeDataSetTableAdapters.UrunTableAdapter.datasource" />
+    <None Include="Properties\DataSources\Fatih_Karameşe_BitirmeTezi_1.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\Fatih_Karameşe_BitirmeTezi_1.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\fCardCash.datasource" />
+    <None Include="Properties\DataSources\fCreateGroupOfProduct.datasource" />
+    <None Include="Properties\DataSources\fCreateProduct.datasource" />
+    <None Include="Properties\DataSources\fInOut.datasource" />
+    <None Include="Properties\DataSources\fLogin.datasource" />
+    <None Include="Properties\DataSources\fMainStore.datasource" />
+    <None Include="Properties\DataSources\fReport.datasource" />
+    <None Include="Properties\DataSources\fSellPage.datasource" />
+    <None Include="Properties\DataSources\fShowDetails.datasource" />
+    <None Include="Properties\DataSources\fShowReport.datasource" />
+    <None Include="Properties\DataSources\fStok.datasource" />
+    <None Include="Properties\DataSources\HizliUrun.datasource" />
+    <None Include="Properties\DataSources\IslemOzet.datasource" />
+    <None Include="Properties\DataSources\Kullanıvılar.datasource" />
+    <None Include="Properties\DataSources\lSandart.datasource" />
+    <None Include="Properties\DataSources\MainGamificiation.datasource" />
+    <None Include="Properties\DataSources\nesnelerim.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\Raporlar.datasource" />
+    <None Include="Properties\DataSources\Sabit.datasource" />
+    <None Include="Properties\DataSources\Satis.datasource" />
+    <None Include="Properties\DataSources\SqlServerTypes.Utilities.datasource" />
+    <None Include="Properties\DataSources\StokHareket.datasource" />
+    <None Include="Properties\DataSources\Terazi.datasource" />
+    <None Include="Properties\DataSources\tnumeric.datasource" />
+    <None Include="Properties\DataSources\Urun.datasource" />
+    <None Include="Properties\DataSources\UrunGrup.datasource" />
+    <None Include="Properties\DataSources\İslem.datasource" />
+    <None Include="Properties\DataSources\İslemler.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Bitirme.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\Bitirme_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bitirme.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bitirme_log.ldf">
+      <DependentUpon>Bitirme.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="entity.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>entity.Context.cs</LastGenOutput>
+      <DependentUpon>entity.edmx</DependentUpon>
+    </Content>
+    <Content Include="entity.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>entity.edmx</DependentUpon>
+      <LastGenOutput>entity.cs</LastGenOutput>
+    </Content>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 ve x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

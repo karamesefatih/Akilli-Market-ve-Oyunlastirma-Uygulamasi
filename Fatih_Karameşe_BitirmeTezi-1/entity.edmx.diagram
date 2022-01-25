@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8183bebc8c794e498eaec7b69ed900c8" Name="Diagram1" ZoomLevel="78">
+        <EntityTypeShape EntityType="BitirmeModel.HizliUrun" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="BitirmeModel.İslem" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="BitirmeModel.Satis" Width="1.5" PointX="4.75" PointY="2.375" />
+        <EntityTypeShape EntityType="BitirmeModel.Terazi" Width="1.5" PointX="0.875" PointY="5" />
+        <EntityTypeShape EntityType="BitirmeModel.Urun" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="BitirmeModel.Barkod" Width="1.5" PointX="6.75" PointY="4.5" />
+        <EntityTypeShape EntityType="BitirmeModel.StokHareket" Width="1.5" PointX="2.875" PointY="4.375" />
+        <EntityTypeShape EntityType="BitirmeModel.IslemOzet" Width="1.5" PointX="2.875" PointY="0.875" />
+        <EntityTypeShape EntityType="BitirmeModel.UrunGrup" Width="1.5" PointX="0.75" PointY="3" />
+        <EntityTypeShape EntityType="BitirmeModel.Kullanıvılar" Width="1.5" PointX="8.875" PointY="0.5" />
+        <EntityTypeShape EntityType="BitirmeModel.Sabit" Width="1.5" PointX="8.875" PointY="4.125" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
